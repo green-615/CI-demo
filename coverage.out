@@ -1,0 +1,7 @@
+mode: set
+coverage_test/math.go:3.24,5.2 1 1
+coverage_test/math.go:7.29,9.2 1 1
+coverage_test/math.go:11.29,13.2 1 1
+coverage_test/math.go:15.27,16.12 1 1
+coverage_test/math.go:16.12,18.3 1 1
+coverage_test/math.go:19.2,19.14 1 1
