@@ -76,3 +76,39 @@ func TestDivide(t *testing.T) {
 		}
 	}
 }
+
+func TestPower(t *testing.T) {
+	testCases := []struct {
+		base, exponent, expected int
+	}{
+		{2, 3, 8},
+		{3, 2, 9},
+		{5, 0, 1},
+		{0, 5, 0},
+	}
+
+	for _, tc := range testCases {
+		result := Power(tc.base, tc.exponent)
+		if result != tc.expected {
+			t.Errorf("Power(%d, %d) = %d; expected %d", tc.base, tc.exponent, result, tc.expected)
+		}
+	}
+}
+
+func TestMax(t *testing.T) {
+	testCases := []struct {
+		a, b, expected int
+	}{
+		{5, 3, 5},
+		{2, 8, 8},
+		{0, 0, 0},
+		{-1, -5, -1},
+	}
+
+	for _, tc := range testCases {
+		result := Max(tc.a, tc.b)
+		if result != tc.expected {
+			t.Errorf("Max(%d, %d) = %d; expected %d", tc.a, tc.b, result, tc.expected)
+		}
+	}
+}
